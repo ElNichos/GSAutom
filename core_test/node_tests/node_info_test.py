@@ -1,6 +1,6 @@
 import unittest
 
-from GSCore.node_info import NodeInfo
+from GSCore.node.node_info import NodeInfo
 
 
 class NodeInfoGenericTest(unittest.TestCase):

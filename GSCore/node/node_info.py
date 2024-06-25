@@ -1,4 +1,4 @@
-from .entity import CompositeEntity
+from GSCore.entity import CompositeEntity
 
 
 class NodeInfo(CompositeEntity):

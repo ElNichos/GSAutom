@@ -1,6 +1,6 @@
 import unittest
 
-from GSCore.node_evaluator import NodeEvaluator
+from GSCore.node.node_evaluator import NodeEvaluator
 
 
 class NodeEvaluatorGenericTest(unittest.TestCase):

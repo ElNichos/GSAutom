@@ -1,4 +1,4 @@
-from .entity import CompositeEntity
+from GSCore.entity import CompositeEntity
 
 
 class NodeEvaluator(CompositeEntity):
@@ -11,7 +11,8 @@ class NodeEvaluator(CompositeEntity):
                  q_gen: float = None,
                  v_module: float = None,
                  q_gen_min: float = None,
-                 q_gen_max: float = None):
+                 q_gen_max: float = None,
+                 handle: str = ""):
         self._slc = slc
         self._node_id = node_id
         self._v_rate = v_rate
@@ -29,6 +30,11 @@ class NodeEvaluator(CompositeEntity):
         else:
             self._q_gen_min = None
             self._q_gen_max = None
+        self._handle = handle
+
+    @property
+    def handle(self):
+        return self._handle
 
     @property
     def slc(self):
